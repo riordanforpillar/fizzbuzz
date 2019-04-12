@@ -17,6 +17,9 @@ class FizzBuzz(object):
         '''
         self.length = length
         
+    def run(self):
+        print(self.generate())
+        
     def generate(self):
         evalutedString = ""
         for i in range(1,self.length+1):
@@ -46,3 +49,11 @@ class FizzBuzz(object):
         if integerToCheck % multiple == 0:
             return True
         return False     
+        
+if __name__ == '__main__':
+    fizzbuzz = FizzBuzz(18)
+    fizzbuzz.run()
+    
+    
+    
+    
