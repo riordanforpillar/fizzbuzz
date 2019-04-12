@@ -38,17 +38,17 @@ class FizzBuzz(object):
         isMultFive  = FizzBuzz.isMultiple(5, step)
         
         if isMultThree and isMultFive:
-            return "Fizz Buzz"
+            return "fizzbuzz"
         if isMultThree:
-            return "Fizz"
+            return "fizz"
         if isMultFive:
-            return "Buzz"
+            return "buzz"
         return str(step)
     
     def isMultiple(multiple, integerToCheck):
         if integerToCheck % multiple == 0:
             return True
-        return False     
+        return False
         
 if __name__ == '__main__':
     fizzbuzz = FizzBuzz(18)
