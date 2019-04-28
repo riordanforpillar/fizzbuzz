@@ -35,8 +35,9 @@ class TestFizzBuzz(unittest.TestCase):
 
         testFunction(fb.FizzBuzz.isMultiple(multiple, toCheck), messageForm  % (multiple, toCheck))
 
-        testCases = [(3, "fizz"), (5, "buzz"), (7, "7"), (15, "fizzbuzz"), (30, "fizzbuzz")]
     def testStep(self):
+        testCases = [(3, "fizz"), (5, "buzz"), (7, "7"), (15, "fizzbuzz"), (30, "fizzbuzz")]
+            
         for stepNumber, expectedResult in testCases:
             result = fb.FizzBuzz.evaluateStep(stepNumber)
             self.assertEqual(result, expectedResult, "Got %s expected %s" % (result, expectedResult))

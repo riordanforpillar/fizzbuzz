@@ -1,13 +1,4 @@
-'''
-Created on Apr 12, 2019
-
-@author: seamus
-'''
-
 class FizzBuzz(object):
-    '''
-    classdocs
-    '''
     
     defaultLength = 15
 
